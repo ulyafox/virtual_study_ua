@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} 
+
+.square {
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.square:hover {
+    transform: scale(300%) translate(50%) rotate(720deg); 
+    color: darkgreen;
+}
+
+
+

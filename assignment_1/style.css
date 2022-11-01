@@ -12,6 +12,7 @@ body {
 
 .square:hover {
     transform: scale(300%) translate(50%) rotate(720deg); 
+    transition: 1s;
     color: darkgreen;
 }
 

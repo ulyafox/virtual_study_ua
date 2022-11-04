@@ -1,0 +1,27 @@
+/* p {
+	font-size: 30px; 
+	color: rgb(167, 34, 167);
+	font-weight: 600;
+	font-style: italic;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: rgb(106, 233, 227);
+	text-transform: capitalize;
+	text-align: right;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+} */
+
+.text-block {
+	font-size: 30px; 
+	color: rgb(167, 34, 167);
+	font-weight: 600;
+	font-style: italic;
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: rgb(106, 233, 227);
+	text-transform: capitalize;
+	text-align: right;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,13 @@
+a {
+	color: rgb(198, 113, 240);
+}
+
+a:visited {
+	font-size: 40px;
+	background: rgb(228, 72, 10);
+}
+
+a:active {
+	background: #000;
+	color: white;
+}

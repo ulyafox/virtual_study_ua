@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<form action="">
+	<form action="#">
 		<p>
 			<label for="name">Ім'я</label>
 			<input id="name" type="text" placeholder="Ім'я"></br>
@@ -35,20 +35,24 @@
 			<input id="color" type="color"></br>
 		</p>
 
-		<p>
-			<label for="rocket">Ракетобудування</label>
-			<input type="checkbox" name="" id="rocket" />
-		</p>
+		<fieldset>
+			<legend>Що я хочу робити на майбутній роботі</legend>
 
-		<p>
-			<label for="cars">Розробляти нові електрокари</label>
-			<input type="checkbox" name="" id="cars" />
-		</p>
+			<p>
+				<label for="rocket">Ракетобудування</label>
+				<input type="checkbox" name="" id="rocket" />
+			</p>
 
-		<p>
-			<label for="ai">Розробляти штучний інтелект</label>
-			<input type="checkbox" name="" id="ai" />
-		</p>
+			<p>
+				<label for="cars">Розробляти нові електрокари</label>
+				<input type="checkbox" name="" id="cars" />
+			</p>
+
+			<p>
+				<label for="ai">Розробляти штучний інтелект</label>
+				<input type="checkbox" name="" id="ai" />
+			</p>
+		</fieldset>
 
 		<p>
 			<label for="female">Ж</label>
@@ -59,14 +63,57 @@
 
 		<p>
 			<select>
-				<option>Українська</option>
-				<option>Російська</option>
-				<option>Англійська</option>
+				<optgroup label="Звичайні мови">
+					<option>Українська</option>
+					<option>Російська</option>
+					<option>Англійська</option>
+					<option>Польська</option>
+				</optgroup>
+				<optgroup label="Мови програмування">
+					<option>HTML</option>
+					<option>CSS</option>
+					<option>JavaScript</option>
+				</optgroup>
 			</select>
+		</p>
+
+		<p>
+			<textarea name="" id="" cols="30" rows="10">
+				Шановний Ілон Маск, я дуже хочу в тебе працювати!
+			</textarea>
+		</p>
+
+		<fieldset>
+			<legend>Хобі та друзів</legend>
+			<p>
+				<label for="name-friend">Ім'я друга</label>
+				<input id="name_friend" type="text" placeholder="Ім'я друга"></br>
+			</p>
+
+			<p>
+				<select>
+					<option>айті</option>
+					<option>музика</option>
+					<option>футбол</option>
+					<option>баскетбол</option>
+					<option>плавання</option>
+					<option>хокей</option>
+					<option>спати</option>
+					<option>танці</option>
+				</select>
+			</p>
+		</fieldset>
+
+		<p>
+			<!-- clear form with input element -->
+			<!-- <input 
+				type="reset" 
+				value="Reset"/> -->
+			<button type="submit">Відправити!</button>
+			<button type="reset">Очистити форму</button>
 		</p>
 	</form>
 
-	<button type="submit">Відправити!</button>
 </body>
 
 </html>

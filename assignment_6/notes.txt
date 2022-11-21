@@ -1,0 +1,45 @@
+/* Selector types:
+	universal
+	
+	element
+	class
+	ID
+	Attribute
+
+	, - list
+	space - descendants of the first element
+	> child
+	: - pseudo classes
+	:: - pseudo elements 
+*/
+
+/* Specificity */
+/* 1st place */
+/* inline styles: <div style="color: green" class="text">Random Text</div> */
+
+/* 2nd place ID*/
+#text {
+	color: orange;
+}
+
+ /* 3rd place (class, attribute, pseudo) */
+.class-name {
+	color: red;
+}
+
+[id] {
+	color: black;
+}
+
+.text:hover {
+	color: purple;
+}
+
+/* 4th place */
+div {
+	color: blue;
+}
+
+div::after {
+	content: 'BOOM!'
+}

@@ -1,0 +1,67 @@
+a:visited {
+	color: white;
+}
+a {
+	color: white;
+}
+b {
+	display: block;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.cv {
+	height: 80vh;
+	width: 40vw;
+	padding: 60px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.cv-about {
+	font-size: 14px;
+}
+.elon-img {
+	float: left;
+
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.cv-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+.cv-item div {
+	flex: 1 1 65%;
+}
+.cv-item aside {
+	flex: 1 1 35%;
+	background: #003147;
+	color: white;
+	padding: 40px;
+}
+
+.cv {
+	box-shadow: 0px 0px 10px #000;
+}
+.work-item time {
+	font-size: 12px;
+	color: grey;
+}
+.work-item p {
+	font-size: 14px;
+}
+.work-title {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.cv-skills {
+	margin-top: -40px;
+	max-width: 450px;
+}

@@ -1,0 +1,31 @@
+/* селектор {
+    властивість: значення;
+    властивість: значення;
+ } */
+
+ /* 2nd place ID*/
+/* #text {
+	color: orange;
+} */
+
+ /* 3rd place (class, attribute, pseudo) */
+.text {
+	color: red;
+}
+
+/* [id] {
+	color: black;
+} */
+
+/* .text:hover {
+	color: purple;
+} */
+
+/* 4th place */
+div {
+	color: blue;
+}
+
+/* div::after {
+	content: 'BOOM!'
+} */

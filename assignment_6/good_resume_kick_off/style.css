@@ -1,0 +1,33 @@
+a:visited {
+	color: white;
+}
+a {
+	color: white;
+}
+b {
+	display: block;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.cv {
+	height: 80vh;
+	width: 40vw;
+}
+.elon-img {
+	float: left;
+}
+.cv-item {
+	display: flex;
+	justify-content: space-between;
+}
+.cv-item div {
+	flex: 1 1 65%;
+}
+.cv-item aside {
+	flex: 1 1 35%;
+}

@@ -1,0 +1,12 @@
+.elon-img {
+	border: 5px dotted red;
+	opacity: 0.85;
+}
+
+p {
+	margin-bottom: 20px;
+}
+
+/*
+Opacity: https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+*/

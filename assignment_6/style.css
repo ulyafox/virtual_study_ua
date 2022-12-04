@@ -1,7 +1,9 @@
-/* селектор {
+/* 
+селектор {
     властивість: значення;
     властивість: значення;
- } */
+ } 
+ */
 
  /* 2nd place ID*/
 /* #text {
@@ -29,3 +31,9 @@ div {
 /* div::after {
 	content: 'BOOM!'
 } */
+
+.box {
+	border: 5px solid black;
+	margin: 10px;
+	padding: 20px;
+}

@@ -4,7 +4,7 @@ body {
 
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-  background: linear-gradient(#141e30, #243b55);
+  background: linear-gradient(#141e30, #7dace1);
 
   display: flex;
   justify-content: center;
@@ -139,11 +139,12 @@ body {
 
 @keyframes btn-anim2 {
   0% {
-      top: -100%;
+    top: -100%;
   }
+
   50%,
   100% {
-      top: 100%;
+    top: 100%;
   }
 }
 
@@ -159,30 +160,32 @@ body {
 
 @keyframes btn-anim3 {
   0% {
-      right: -100%;
-    }
-    50%,
-    100% {
-        right: 100%;
-    }
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
 }
 
 .login-box button span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: 0.75s;
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
-    0% {
-        bottom: -100%;
-    }
-    50%,
-    100% {
-        bottom: 100%;
-    }
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
 }

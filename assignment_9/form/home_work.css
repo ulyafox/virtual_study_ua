@@ -1,0 +1,23 @@
+/* 
+
+Змінити кольори в формі (done)
+Зробити внутрішній відступ у формі на 10 пікселів більше. (done)
+Зробити границю (border) у input ширше на 1 піксель (done)
+Зробити тінь форми іншого коліру  (done)
+
+*/
+
+.login-box {
+	background-color: rgb(38, 63, 134);
+	padding: 50px;
+}
+
+.login-box .user-box input,
+.login-box .user-box input:focus,
+.login-box .user-box input:valid {
+	border-width: 2px;
+}
+
+.login-box:hover {
+	box-shadow: 0 15px 25px rgba(142, 8, 175, 0.5);
+}

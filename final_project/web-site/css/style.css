@@ -24,7 +24,7 @@ body a {
 .header {
 	position: fixed;
 	inset: 0;
-	/* background: #000; */
+	background: #000;
 	height: 250px;
 	z-index: 100;
 
@@ -69,14 +69,13 @@ body a {
 }
 .nav__item:hover {
 	color: black;
-	background: #fff;
+	background: orange;
 }
 .nav__item:hover a {
 	color: black;
 }
 .main {
-	background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%),
-		url("../images/images/main.png");
+	background: url("../images/main.jpg");
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
@@ -98,18 +97,17 @@ body a {
 
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	color: #c0c0c0;
+	color: #e0dcdc;
 }
 .main__title {
-	font-size: 54px;
-	line-height: 59px;
+	font-size: 104px;
+	line-height: 110px;
 	margin-bottom: 18px;
 }
 .main__subtitle {
-	font-size: 14px;
-	line-height: 20px;
-
-	color: #c0c0c0;
+	font-size: 20px;
+	line-height: 22px;
+	color: #e0dada;
 }
 .photo-specs {
 	display: flex;
@@ -124,7 +122,7 @@ body a {
 	align-items: center;
 	gap: 5px;
 }
-.services {
+.history {
 	margin-top: 110px;
 
 	margin-bottom: 100px;
@@ -148,34 +146,37 @@ body a {
 	margin-top: 15px;
 }
 
-.services__row {
+.history__row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 16px;
 }
-.services__item {
+.history__item {
 	height: 600px;
 	flex: 1 1 49%;
 	background-size: cover;
 	padding: 48px;
 	cursor: pointer;
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
 }
 
-.services__item.first {
-	background-image: url("../images/images/services/item1.png");
+.history__item.first {
+	background-image: url("../images/james_naismith.jpg");
 }
 
-.services__item.second {
-	background-image: url("../images/images/services/item2.png");
+.history__item.second {
+	background-image: url("../images/first_match.png");
 }
 
-.services__item.third {
-	background-image: url("../images/images/services/item3.png");
+.history__item.third {
+	background-image: url("../images/team.png");
 }
-.services__item.forth {
-	background-image: url("../images/images/services/item4.png");
+.history__item.forth {
+	background-image: url("../images/nba.png");
 }
 
 .item__name {
@@ -196,7 +197,8 @@ body a {
 	font-size: 14px;
 	line-height: 20px;
 
-	color: #c0c0c0;
+	color: #ffffff;
+	font-weight: 500;
 	opacity: 0;
 	transition: 0.3s;
 	transform: translateY(-10px);
@@ -220,6 +222,9 @@ body a {
 	padding-right: 10px;
 	cursor: pointer;
 }
+.button:hover {
+	background-color: orange;
+}
 .button:hover span {
 	width: 24px;
 	height: 24px;
@@ -234,16 +239,19 @@ body a {
 
 	transition: 0.3s 0.3s;
 }
-.services__item:hover span {
+.history__item:hover {
+
+}
+.history__item:hover span {
 	width: 24px;
 	height: 24px;
 }
 
-.services__item:hover .item__name {
+.history__item:hover .item__name {
 	transform: translateY(0);
 	opacity: 1;
 }
-.services__item:hover .item__description {
+.history__item:hover .item__description {
 	transform: translateY(0);
 	opacity: 1;
 }

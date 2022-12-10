@@ -5,6 +5,7 @@ body {
 	scroll-behavior: smooth;
 	scroll-padding-top: 90px;
 }
+
 * {
 	margin: 0;
 	padding: 0;
@@ -17,10 +18,12 @@ body {
 	font-family: "Poppins";
 	overflow-x: hidden;
 }
+
 body a {
 	color: white;
 	text-decoration: none;
 }
+
 .header {
 	position: fixed;
 	inset: 0;
@@ -30,6 +33,7 @@ body a {
 
 	animation: header-expand 2s forwards;
 }
+
 .container {
 	max-width: 1200px;
 	padding: 0 25px;
@@ -51,6 +55,7 @@ body a {
 	align-items: center;
 	gap: 20px;
 }
+
 .nav__item {
 	font-size: 15px;
 	line-height: 20px;
@@ -67,13 +72,16 @@ body a {
 
 	cursor: pointer;
 }
+
 .nav__item:hover {
 	color: black;
 	background: orange;
 }
+
 .nav__item:hover a {
 	color: black;
 }
+
 .main {
 	background: url("../images/main.jpg");
 	width: 100vw;
@@ -82,6 +90,7 @@ body a {
 	position: relative;
 	animation: opacity-appear 0.3s forwards;
 }
+
 .main__text {
 	position: absolute;
 	bottom: 68px;
@@ -91,6 +100,7 @@ body a {
 	opacity: 0;
 	animation: title-appear 1s 0.3s forwards;
 }
+
 .main__profession {
 	font-size: 14px;
 	line-height: 20px;
@@ -99,16 +109,19 @@ body a {
 	text-transform: uppercase;
 	color: #e0dcdc;
 }
+
 .main__title {
 	font-size: 104px;
 	line-height: 110px;
 	margin-bottom: 18px;
 }
+
 .main__subtitle {
 	font-size: 20px;
 	line-height: 22px;
 	color: #e0dada;
 }
+
 .photo-specs {
 	display: flex;
 	gap: 14px;
@@ -117,11 +130,13 @@ body a {
 	bottom: 5%;
 	right: 5%;
 }
+
 .specs-item {
 	display: flex;
 	align-items: center;
 	gap: 5px;
 }
+
 .history {
 	margin-top: 110px;
 
@@ -135,6 +150,7 @@ body a {
 	font-size: 40px;
 	line-height: 42px;
 }
+
 .subtitle {
 	font-size: 23px;
 	line-height: 30px;
@@ -153,6 +169,7 @@ body a {
 	flex-wrap: wrap;
 	gap: 16px;
 }
+
 .history__item {
 	height: 600px;
 	flex: 1 1 49%;
@@ -165,18 +182,19 @@ body a {
 }
 
 .history__item.first {
-	background-image: url("../images/james_naismith.jpg");
+	background-image: url("../images/history/james_naismith.jpg");
 }
 
 .history__item.second {
-	background-image: url("../images/first_match.png");
+	background-image: url("../images/history/first_match.png");
 }
 
 .history__item.third {
-	background-image: url("../images/team.png");
+	background-image: url("../images/history/team.png");
 }
+
 .history__item.forth {
-	background-image: url("../images/nba.png");
+	background-image: url("../images/history/nba.png");
 }
 
 .item__name {
@@ -192,6 +210,7 @@ body a {
 	transition: 0.3s;
 	transform: translateY(-10px);
 }
+
 .item__description {
 	margin-top: 16px;
 	font-size: 14px;
@@ -203,6 +222,7 @@ body a {
 	transition: 0.3s;
 	transform: translateY(-10px);
 }
+
 .button {
 	font-size: 15px;
 	line-height: 20px;
@@ -222,13 +242,16 @@ body a {
 	padding-right: 10px;
 	cursor: pointer;
 }
+
 .button:hover {
 	background-color: orange;
 }
+
 .button:hover span {
 	width: 24px;
 	height: 24px;
 }
+
 .button span {
 	width: 0;
 	height: 0;
@@ -239,9 +262,9 @@ body a {
 
 	transition: 0.3s 0.3s;
 }
-.history__item:hover {
 
-}
+.history__item:hover {}
+
 .history__item:hover span {
 	width: 24px;
 	height: 24px;
@@ -251,6 +274,7 @@ body a {
 	transform: translateY(0);
 	opacity: 1;
 }
+
 .history__item:hover .item__description {
 	transform: translateY(0);
 	opacity: 1;
@@ -262,11 +286,22 @@ body a {
 	right: 5%;
 	max-width: 270px;
 }
-.sunset {
+
+.rules {
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	background-image: url("../images/images/fuji.png");
+	background-image: url("../images/court.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 1s 1s;
+}
+
+.equipment {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/equipment.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: 1s 1s;
@@ -275,6 +310,7 @@ body a {
 .desс__title {
 	max-width: 350px;
 }
+
 .desс__subtitle {
 	font-size: 14px;
 	line-height: 20px;
@@ -285,6 +321,7 @@ body a {
 .gear {
 	display: flex;
 }
+
 /* Лише стилі тексту */
 
 .gear__subtitle {
@@ -296,12 +333,14 @@ body a {
 
 	color: #c0c0c0;
 }
+
 .gear__title {
 	font-size: 28px;
 	line-height: 32px;
 	margin-top: 10px;
 	margin-bottom: 16px;
 }
+
 /* Лише стилі тексту */
 
 .gear__text {
@@ -312,9 +351,11 @@ body a {
 	flex-direction: column;
 	justify-content: center;
 }
+
 .gear__description {
 	max-width: 500px;
 }
+
 .gear__image {
 	flex: 1 1 50%;
 	background-image: url("../images/images/gear.png");
@@ -335,11 +376,13 @@ body a {
 	margin-top: 110px;
 	margin-bottom: 140px;
 }
+
 .clients__row {
 	margin-top: 40px;
 	display: flex;
 	justify-content: space-between;
 }
+
 .starfall {
 	position: relative;
 	width: 100vw;
@@ -367,6 +410,7 @@ body a {
 .footer h3 {
 	color: #c0c0c0;
 }
+
 .footer__logo {
 	flex: 1 1 auto;
 }
@@ -377,17 +421,21 @@ body a {
 	text-decoration: none;
 	margin: 10px 0;
 }
+
 .footer__nav a:hover {
 	text-decoration: underline;
 }
+
 .footer__navs {
 	display: flex;
 	gap: 44px;
 }
+
 .footer__news {
 	display: flex;
 	justify-content: space-between;
 }
+
 .footer__news form {
 	display: flex;
 	justify-content: space-between;
@@ -399,6 +447,7 @@ body a {
 	background: #fff;
 	padding: 11px 6px;
 }
+
 .footer__news form input {
 	border: none;
 	outline: none;
@@ -406,23 +455,28 @@ body a {
 	width: 100%;
 	font-family: inherit;
 }
+
 .news__text p {
 	margin-top: 20px;
 }
+
 .footer__news .button {
 	background: #000;
 	margin: 0;
 	height: 30px;
 	color: white;
 }
+
 .footer__news .button span {
 	background: #fff;
 }
+
 .footer__licence {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 100px;
 }
+
 .social__row {
 	display: flex;
 	gap: 15px;
@@ -433,6 +487,7 @@ body a {
 		transform: translate(-50%, 100%);
 		opacity: 0;
 	}
+
 	100% {
 		transform: translate(-50%, 0%);
 		opacity: 1;
@@ -443,16 +498,19 @@ body a {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
+
 @keyframes header-expand {
 	0% {
 		inset: 0 50%;
 		width: 100px;
 		height: 0;
 	}
+
 	100% {
 		inset: 0;
 		width: 100%;
@@ -463,11 +521,45 @@ body a {
 .header {
 	animation: header-expand 2s forwards;
 }
+
 .header__body {
 	opacity: 0;
 	animation: opacity-appear 1s 2s forwards;
 }
+
 .main__text {
 	opacity: 0;
 	animation: title-appear 1s 0.3s forwards;
+}
+
+/* .rules__container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rules__container__singlerule {
+	flex: 1 0 21%;
+	margin: 5px;
+	height: 100px;
+	font-size: 10px;
+} */
+
+.rules__container__singlerule__content {
+	display: none;
+}
+
+.rules__container__singlerule__title {
+	padding-left: 58px;
+	color: #e0dcdc;
+}
+
+.rules__container__singlerule__title:hover {
+	color: orange;
+}
+
+.rules__container__singlerule__title:hover ~ div {
+	display: block;
+	font-size: 32px;
+	transition-delay:1s;
+	padding: 8px 120px;
 }

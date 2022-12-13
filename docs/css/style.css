@@ -51,6 +51,7 @@ body a {
 }
 
 .header__nav {
+	margin-left: auto;
 	display: flex;
 	align-items: center;
 	gap: 20px;

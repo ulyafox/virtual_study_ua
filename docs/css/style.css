@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+
+html,
+body {
+	scroll-behavior: smooth;
+	scroll-padding-top: 90px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background: #000;
+	font-family: "Poppins";
+	overflow-x: hidden;
+}
+
+body a {
+	color: white;
+	text-decoration: none;
+}
+
+.header {
+	position: fixed;
+	inset: 0;
+	background: #000;
+	height: 250px;
+	z-index: 100;
+
+	animation: header-expand 2s forwards;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 25px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.header__body {
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	opacity: 0;
+	animation: opacity-appear 1s 2s forwards;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.nav__item {
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+
+	padding-left: 20px;
+	padding-top: 9px;
+	padding-bottom: 13px;
+	padding-right: 20px;
+
+	border-radius: 14px;
+
+	transition: 0.3s;
+
+	cursor: pointer;
+}
+
+.nav__item:hover {
+	color: black;
+	background: orange;
+}
+
+.nav__item:hover a {
+	color: black;
+}
+
+.main {
+	background: url("../images/main.jpg");
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	position: relative;
+	animation: opacity-appear 0.3s forwards;
+}
+
+.main__text {
+	position: absolute;
+	bottom: 68px;
+	left: 50%;
+	text-align: center;
+	max-width: 580px;
+	opacity: 0;
+	animation: title-appear 1s 0.3s forwards;
+}
+
+.main__profession {
+	font-size: 14px;
+	line-height: 20px;
+
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #e0dcdc;
+}
+
+.main__title {
+	font-size: 104px;
+	line-height: 110px;
+	margin-bottom: 18px;
+}
+
+.main__subtitle {
+	font-size: 20px;
+	line-height: 22px;
+	color: #e0dada;
+}
+
+.photo-specs {
+	display: flex;
+	gap: 14px;
+
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
+.specs-item {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.history {
+	margin-top: 110px;
+
+	margin-bottom: 100px;
+}
+
+.title {
+	text-align: center;
+
+	color: #ffffff;
+	font-size: 40px;
+	line-height: 42px;
+}
+
+.subtitle {
+	font-size: 23px;
+	line-height: 30px;
+
+	text-align: center;
+
+	color: #c0c0c0;
+	margin-bottom: 42px;
+	margin-top: 15px;
+}
+
+.history__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.history__item {
+	height: 600px;
+	flex: 1 1 49%;
+	background-size: cover;
+	padding: 48px;
+	cursor: pointer;
+	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;
+}
+
+.history__item.first {
+	background-image: url("../images/history/james_naismith.jpg");
+}
+
+.history__item.second {
+	background-image: url("../images/history/first_match.png");
+}
+
+.history__item.third {
+	background-image: url("../images/history/team.png");
+}
+
+.history__item.forth {
+	background-image: url("../images/history/nba.png");
+}
+
+.item__name {
+	font-size: 14px;
+	line-height: 20px;
+
+	letter-spacing: 2px;
+	text-transform: uppercase;
+
+	color: #ffffff;
+	margin-top: 80%;
+	opacity: 0;
+	transition: 0.3s;
+	transform: translateY(-10px);
+}
+
+.item__description {
+	margin-top: 16px;
+	font-size: 14px;
+	line-height: 20px;
+
+	color: #ffffff;
+	font-weight: 500;
+	opacity: 0;
+	transition: 0.3s;
+	transform: translateY(-10px);
+}
+
+.button {
+	font-size: 15px;
+	line-height: 20px;
+
+	letter-spacing: 0.4px;
+
+	color: #000000;
+
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding: 5px;
+	margin-top: 10px;
+	background: #fff;
+	border-radius: 14px;
+	align-self: start;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: orange;
+}
+
+.button:hover span {
+	width: 24px;
+	height: 24px;
+}
+
+.button span {
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	display: inline-block;
+	background: #000;
+	margin-right: 8px;
+
+	transition: 0.3s 0.3s;
+}
+
+.history__item:hover {}
+
+.history__item:hover span {
+	width: 24px;
+	height: 24px;
+}
+
+.history__item:hover .item__name {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.history__item:hover .item__description {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.photo-desc {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	max-width: 270px;
+}
+
+.rules {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/court.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 1s 1s;
+}
+
+.equipment {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/equipment.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 1s 1s;
+}
+
+.desс__title {
+	max-width: 350px;
+}
+
+.desс__subtitle {
+	font-size: 14px;
+	line-height: 20px;
+
+	color: #c0c0c0;
+}
+
+.teams {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/teams/teams.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 1s 1s;
+}
+
+.teams__image {
+	
+}
+
+.leaves {
+	position: relative;
+	height: 80vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../images/images/leaves.png");
+}
+
+.clients {
+	margin-top: 110px;
+	margin-bottom: 140px;
+}
+
+.clients__row {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.starfall {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/images/himalayas.png");
+}
+
+.get-in-touch {
+	margin-top: 110px;
+	margin-bottom: 110px;
+}
+
+.button.center {
+	margin: 0 auto;
+}
+
+.break {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	margin: 36px 0;
+}
+
+.footer p,
+.footer h3 {
+	color: #c0c0c0;
+}
+
+.footer__logo {
+	flex: 1 1 auto;
+}
+
+.footer__nav a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	margin: 10px 0;
+}
+
+.footer__nav a:hover {
+	text-decoration: underline;
+}
+
+.footer__navs {
+	display: flex;
+	gap: 44px;
+}
+
+.footer__news {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__news form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 1 auto;
+	height: 52px;
+	max-width: 450px;
+	border-radius: 8px;
+	background: #fff;
+	padding: 11px 6px;
+}
+
+.footer__news form input {
+	border: none;
+	outline: none;
+	background: none;
+	width: 100%;
+	font-family: inherit;
+}
+
+.news__text p {
+	margin-top: 20px;
+}
+
+.footer__news .button {
+	background: #000;
+	margin: 0;
+	height: 30px;
+	color: white;
+}
+
+.footer__news .button span {
+	background: #fff;
+}
+
+.footer__licence {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+
+.social__row {
+	display: flex;
+	gap: 15px;
+}
+
+@keyframes title-appear {
+	0% {
+		transform: translate(-50%, 100%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate(-50%, 0%);
+		opacity: 1;
+	}
+}
+
+@keyframes opacity-appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes header-expand {
+	0% {
+		inset: 0 50%;
+		width: 100px;
+		height: 0;
+	}
+
+	100% {
+		inset: 0;
+		width: 100%;
+		height: 90px;
+	}
+}
+
+.header {
+	animation: header-expand 2s forwards;
+}
+
+.header__body {
+	opacity: 0;
+	animation: opacity-appear 1s 2s forwards;
+}
+
+.main__text {
+	opacity: 0;
+	animation: title-appear 1s 0.3s forwards;
+}
+
+.rules__container__singlerule__content {
+	display: none;
+}
+
+.rules__container__singlerule__title {
+	padding-left: 58px;
+	color: #e0dcdc;
+}
+
+.rules__container__singlerule__title:hover {
+	color: orange;
+}
+
+.rules__container__singlerule__title:hover ~ div {
+	display: block;
+	font-size: 32px;
+	transition-delay:1s;
+	padding: 8px 120px;
+}
+
+.equipment-container {
+	background-color: black;
+	opacity: 0.4;
+	padding: 25px;
+	width: 50vw;
+}
+
+a .buy-some-button {
+	margin-left: auto;
+}
